@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:wght@200&family=Stick+No+Bills:wght@300&family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagem/png" href="../img/shortcut.ico">
+    <title>Jogo de Cartas</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.setup.js"></script>
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+
+    <div class="logo-menu-position"><a href="https://github.com/Geckkou" target="_blank"><img class="logo-menu-size" src="img/logos/logo-menu.png" alt="Logo"></a></div>
+    
+    <div class="cd-slider-nav top-right"">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item selected">
+                <a class="nav-link" href="#0">Menu</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="bundle/tutorial.html">Tutorial</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="bundle/deck.html">Deck de Cartas</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="bundle/sobre.html">Sobre</a>
+                <div class="circle"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <a><img id="btnAudio" class="audio-btn" src="img/logos/unmute.png" alt="Áudio Ligado"></a>
+
+    <div class="menu-container">
+        <div class="linha-menu-cima">
+            <div class="linha-circle">
+            </div>
+        </div>
+        <div class="bloco-txt-menu">
+            <fieldset>
+                <p class="title-style">Bem vindos ao Trunfo Zone!</p>
+
+                <p class="txt-style">
+                    Aqui você poderá jogar as melhores partidas de trunfo de hoje.
+                    Clique em jogar para conferir os temas disponíveis.
+                    
+                </p>
+            </fieldset>
+        </div>
+        <div class="linha-menu-baixo">
+            <div class="linha-circle">
+            </div>
+        </div>
+
+        <div>
+            <a class="iniciar-btn" id="jogar" href="bundle/selecao.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                JOGAR
+            </a>
+        </div>
+    </div>
+
+    <audio id="audio" src="audio/epic-sound.mp3" loop></audio>
+    <audio id="jogar_audio" src="audio/click.mp3"></audio>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

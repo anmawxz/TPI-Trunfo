@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:wght@200&family=Stick+No+Bills:wght@300&family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagem/png" href="../img/shortcut.ico">
+    <title>Selecao de Tema</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="../video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+
+    <div class="logo-menu-position"><a href="https://github.com/Geckkou" target="_blank"><img class="logo-menu-size" src="../img/logos/logo-menu.png" alt="Logo"></a></div>
+    
+    <div class="cd-slider-nav top-right"">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Menu</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./tutorial.html">Tutorial</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./deck.html">Deck de Cartas</a>
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sobre.html">Sobre</a>
+                <div class="circle"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="selecao-position">
+        <div class="left-div">
+            <a class="cardanimation botao" href="lol-game.html"><img src="../img/logos/lol-logo.png"></a>
+        </div>
+        <div class="right-div">
+            <a class="cardanimation botao" href="genshin-game.html"><img src="../img/logos/gi-logo.png"></a>
+        </div>
+        <div class="right-div">
+            <a class="cardanimation botao" href="fh-game.html"><img src="../img/logos/fh-logo.png"></a>
+        </div>
+        <div class="right-div">
+            <a class="cardanimation botao" href="kan-game.html"><img src="../img/logos/kan-logo.jpg"></a>
+        </div>        
+    </div>
+
+    <audio id="audio" src="../audio/retro.mp3"></audio>
+    <script>
+        var audio = document.getElementById("audio");
+        var botoes = document.getElementsByClassName("botao");
+
+        Array.from(botoes).forEach(function(botao) {
+        botao.addEventListener("mouseover", function() {
+            // Reproduz o efeito sonoro ao passar o mouse por cima de cada botão
+            audio.play();
+            audio.currentTime = 0.1;
+        });
+        });
+    </script>
+</body>
+
+</html>

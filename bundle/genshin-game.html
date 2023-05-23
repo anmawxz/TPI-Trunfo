@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:wght@200&family=Stick+No+Bills:wght@300&family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagem/png" href="../img/shortcut.ico">
+    <title>Trunfo Genshin Impact</title>
+    <link rel="stylesheet" type="text/css" href="../css/gi.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- background da tela do genshin -->
+    <div id="gi-bg"></div>
+    
+    <div class="cd-slider-nav top-right"">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="selecao.html">SAIR</a>
+                <div class="circle"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--container jogo lol-->
+    <div class="container">
+        <!--logo do lol-->
+        <img src="../img/logos/pagegi-logo.png" class="page-logo" alt="">
+
+        
+        
+        <form id="form">
+            <div class="wrapper">
+                <div id="container-placar">
+                    <ul>
+                        <li><h3 class="placar-title">Placar :</h3></li>
+                        <li><div id="placar"></div></li>
+                        <li><div id="quantidade-cartas"></div></li>
+                        <li><div id="resultado"></div>
+                            <div id="atb-escolhido">
+                                <p>O atributo escolhido foi:</p>
+                                <div class="atributoEscolhidoMaquina" id="atributoEscolhidoMaquina"></div>
+                            </div></li>
+                    </ul>      
+                </div>
+
+                <div id="div-btn-sortear">
+                    <button class="btn-sorteio centter" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+                </div>
+                
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta " style="margin-right: 300px;"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+
+                <div class="btn-bottom">
+                    <button
+                    class="button-jogar btn-sorteio"
+                    type="button"
+                    id="btnJogar"
+                    onclick="jogar()"
+                    disabled="false">Jogar</button>
+
+                    <button
+                    class="btn-sorteio"
+                    type="button"
+                    id="btnProximaRodada"
+                    onclick="proximaRodada()"
+                    disabled="true">Proxima rodada</button>
+                </div>
+                
+            </div>
+
+            
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="../js/gi-main.js"></script>
+
+
+
+</body>
+
+</html>
